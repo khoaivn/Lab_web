@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn").click(function(){
+					$("#aaa").animate({left: '250px',
+						height: '200px',
+						width:'200px'},'slow',function(){
+							$("#aaa").animate({bottom: '250px',
+								height: '200px',
+								width:'200px'},'fast');
+						}
+					);	
+				});	
+			});
+		</script>
+	</head>
+	
+	<body>
+		<button id="btn">New Window</button>
+		<div id="aaa" style="background:red;position:absolute">
+			<p> the div di chuyen</p>
+			
+		</div>
+		
+		
+		
+	</body>
+	
+</html>

@@ -1,0 +1,12 @@
+newWindow.document.write(
+					"<html>
+						<head>
+							<title>Sample Title</title>
+						</head>
+						<body>
+							<h1>Sample Text</h1>
+						</body>
+					</html>");
+				newWindow.status = "Hello folks";
+				
+				var timer = setTimeout('moveWin(100, 100)',1000);

@@ -1,0 +1,41 @@
+<html>
+	
+	<body>
+		
+		<button onclick="newWin()">New Window</button>
+		<button onclick="moveWin()">di chuyen window</button>
+		<button onclick="resizeWin()">thu nho Window</button>
+		<button onclick="closeWin_0()">Xoa Window</button>
+	</body>
+	<head>
+		<script>
+			var array_w = [];
+			var number_array = -1;
+
+			var x = screen.width;
+			var y = screen.height;
+			var x1 = 0;
+			var y1 = 0;
+			function newWin(){
+				number_array++;
+				array_w[number_array] = window.open("", "", "width=500, height=300, menubar=yes, status=yes, resizable=yes");
+				array_w[number_array].document.write("<html>"+
+					number_array+"aaaaa</html>");
+			
+				
+				
+			}
+			function closeWin_0() {
+				array_w[1].close();
+			}
+			function moveWin(x, y){
+			
+				newWindow.moveTo(x,y);
+				
+			}
+			function resizeWin(){
+				newWindow.resizeTo(100,100);
+			}
+		</script>
+	</head>
+</html>
