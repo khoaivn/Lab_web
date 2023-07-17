@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <div id="div_tag">
+            
+            <input type="text" value="test text" /> 
+            <div>
+                <span id="test">test span</span>
+            </div>
+        </div>
+        <script>
+            var el = document.getElementById('div_tag'); 
+            alert (el.childNodes[1].value);
+            alert (el.childNodes[2].getElementsByTagName('span').id);
+        </script>
+    </body>
+</html>

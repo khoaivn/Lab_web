@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <form name="frm1">
+            <input type="text" name="fname" value="Viet">
+            <input type="text" name="fname" value="Nam">
+            <input type="submit" value="Submit">
+        </form>
+        <p id="demo"></p>
+        <script>
+            var x = document.forms["frm1"];
+            var text = "";
+            var i;
+            for (i = 0; i < x.length; i++) {
+                text += x.elements[i].value + "<br>"; 
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thay đổi thuộc tính thẻ HTML</title>
+</head>
+  <body>
+    <button onclick="changeImage()">Thay đổi ảnh</button>
+    <br>
+    <img id="myImage" src="old_image.jpg" alt="Ảnh cũ">
+    
+    <script>
+      function changeImage() {
+        var imgElement = document.getElementById("myImage");
+        imgElement.setAttribute("src", "new_image.jpg");
+      }
+    </script>
+  </body>
+</html>

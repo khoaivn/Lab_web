@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thay đổi thuộc tính CSS</title>
+  <style>
+    #myElement {
+      color: blue;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="changeColor()">Thay đổi màu sắc</button>
+  <br>
+  <p id="myElement">Đây là một đoạn văn bản.</p>
+  
+  <script>
+    function changeColor() {
+      var element = document.getElementById("myElement");
+      element.style.color = "red";
+      element.style.fontSize = "24px";
+    }
+  </script>
+</body>
+</html>
