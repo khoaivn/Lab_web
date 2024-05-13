@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Positioning Example</title>
+<style>
+  /* Styles for demonstration */
+  .container {
+    position: relative; /* Positioning context for absolute positioning */
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .box {
+    position: absolute; /* Positioning */
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    background-color: lightblue;
+    border: 2px solid blue;
+  }
+
+  .box-1 {
+    top: 20px;
+    left: 20px;
+  }
+
+  .box-2 {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .box-3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box box-1">
+    <p>This box is positioned at the top left corner.</p>
+  </div>
+  <div class="box box-2">
+    <p>This box is positioned at the bottom right corner.</p>
+  </div>
+  <div class="box box-3">
+    <p>This box is positioned at the center of the container.</p>
+  </div>
+</div>
+
+</body>
+</html>

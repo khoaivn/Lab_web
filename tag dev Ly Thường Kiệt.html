@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc div</title>
+    <style>
+        /* CSS có thể được thêm vào đây để tạo kiểu cho các phần tử */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .d1 {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 20px auto;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9, .d10 {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .d6, .d7 {
+            width: 48%;
+            display: inline-block;
+            vertical-align: top; /* Căn chỉnh các phần tử theo đỉnh */
+        }
+        .d5 {
+            flex-grow: 1;
+        }
+        .d5 .d3, .d5 .d4, .d5 .d10 {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <div class="d2">Nội dung thẻ d2</div>
+        <div class="d5">
+            <div class="d3">Nội dung thẻ d3</div>
+            <div class="d4" style>
+                Nội dung thẻ d4
+                <div class="d6">
+                    <h2>Lý Thường Kiệt</h2>
+                    <p>Lý Thường Kiệt (1019-1105) là một trong những danh tướng, danh sĩ, nhà văn nổi tiếng trong lịch sử Việt Nam.</p>
+                    <p>Lý Thường Kiệt có những chiến công lịch sử, đặc biệt là trong việc đánh đuổi quân Nam Hán ra khỏi nước Việt, cũng như trong việc phòng thủ quân Đại Cồ Việt trước cuộc xâm lược của nhà Tống.</p>
+                </div>
+                <div class="d7">
+                    <h2>Đóng góp và kế thừa</h2>
+                    <p>Lý Thường Kiệt là một trong những nhân vật quan trọng nhất của lịch sử quân sự Việt Nam, ông để lại di sản văn hóa, tinh thần vĩ đại cho thế hệ sau.</p>
+                </div>
+            </div>
+            <div class="d10">Nội dung thẻ d10</div>
+        </div>
+    </div>
+</body>
+</html>

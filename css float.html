@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Navigation</title>
+  <style>
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+    nav::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      float: left;
+      margin-right: 20px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .content {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    img {
+      float: left;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul >
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <img src="https://blog.hubspot.com/hs-fs/hubfs/how-much-website-cost_0.webp?width=595&height=400&name=how-much-website-cost_0.webp" alt="web" style="width:170px;height:170px;">
+    <h1>Welcome to Our Website!</h1>
+    <p>This is a sample website with a navigation bar created using CSS float property.</p>
+  </div>
+</body>
+</html>
