@@ -1,0 +1,44 @@
+/* Cài đặt font-size gốc cho toàn bộ trang */
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+/* Container chính */
+.container {
+    font-size: 20px; /* Đặt font-size cho container để thấy sự khác biệt giữa em và rem */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Sử dụng đơn vị em */
+.text-em {
+    font-size: 1.5em; /* 1.5 * 20px (font-size của container) = 30px */
+    color: green;
+}
+
+/* Sử dụng đơn vị rem */
+.text-rem {
+    font-size: 1.5rem; /* 1.5 * 16px (font-size của html) = 24px */
+    color: blue;
+}
+
+/* Container lồng nhau */
+.nested-container {
+    font-size: 14px; /* Thay đổi font-size để minh họa sự khác biệt của em */
+    border: 1px dashed #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Đoạn văn bản lồng nhau sử dụng đơn vị em */
+.nested-em {
+    font-size: 1.5em; /* 1.5 * 14px (font-size của nested-container) = 21px */
+    color: purple;
+}
+
+/* Đoạn văn bản lồng nhau sử dụng đơn vị rem */
+.nested-rem {
+    font-size: 1.5rem; /* 1.5 * 16px (font-size của html) = 24px */
+    color: red;
+}
