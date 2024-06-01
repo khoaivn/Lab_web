@@ -1,61 +1,51 @@
-<html><head>
+<html>
+<head>
 	<meta charset="utf-8">
     <style>
         body {
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: green !important;
-            font-size: 24px;
-        }
-        p {
-            color: navy;
-            font-weight: bold;
-        }
-		.div1 {
-			background-image: url("hoa.png");
-			background-repeat: no-repeat;
-			background-attachment: scroll;
-			background-position: center top;
-			border: 1px solid red;
-			height: 400px;
+			display: flex;
+			margin: 0;
 		}
-    </style></head>
+		.left {
+			width: 30%;
+		}
+		.leftc {
+			height: 100%;
+			background-color: red;
+		}
+		.right {
+			width: 60%;
+			background-image:url("hoa.png");
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-attachment: fixed;
+		}
+		.box {
+			margin: 30px;
+			outline-width: 40px;
+		}
+    </style>
+</head>
 <body>
-	<div>
-		<h1 style="color: red !important;">Chào mừng bạn đến với Internal CSS!</h1>
-		<p>Văn bản này có màu xanh hải quân và in đậm.</p>
+	
+	<div class="left">
+		<div class="leftc">
+			ABC
+		</div>
 	</div>
-	<div>
-		<h1 style="color: red !important;">Chào mừng bạn đến với Internal CSS!</h1>
-		<p>Văn bản này có màu xanh hải quân và in đậm.</p>
+	<div class="right">
+		<div class="container">
+			<div class="box">
+			  <p>This is box 1. It's in the normal flow of the document.</p>
+			</div>
+			<div class="box">
+			  <p>This is box 2. It comes after box 1 in the HTML, so it appears below box 1 in the normal flow.</p>
+			</div>
+			<div class="box">
+			  <p>This is box 3. It comes after box 2 in the HTML, so it appears below box 2 in the normal flow.</p>
+			</div>
+		</div>
+		  
 	</div>
-	<div>
-		<h1 style="color: red !important;">Chào mừng bạn đến với Internal CSS!</h1>
-		<p>Văn bản này có màu xanh hải quân và in đậm.</p>
-	</div>
-	<div>
-		<h1 style="color: red !important;">Chào mừng bạn đến với Internal CSS!</h1>
-		<p>Văn bản này có màu xanh hải quân và in đậm.</p>
-	</div>
-	<div>
-		<h1 style="color: red !important;">Chào mừng bạn đến với Internal CSS!</h1>
-		<p>Văn bản này có màu xanh hải quân và in đậm.</p>
-	</div>
-	<div class="div1">
-		<h1 style="color: red !important;">Chào mừng bạn đến với Internal CSS!</h1>
-		<p>Văn bản này có màu xanh hải quân và in đậm.</p>
-	</div>
-	<div>
-		<h1 style="color: red !important;">Chào mừng bạn đến với Internal CSS!</h1>
-		<p>Văn bản này có màu xanh hải quân và in đậm.</p>
-	</div>
-	<div>
-		<h1 style="color: red !important;">Chào mừng bạn đến với Internal CSS!</h1>
-		<p>Văn bản này có màu xanh hải quân và in đậm.</p>
-	</div>
-	<div>
-		<h1 style="color: red !important;">Chào mừng bạn đến với Internal CSS!</h1>
-		<p>Văn bản này có màu xanh hải quân và in đậm.</p>
-	</div>
-</body></html>
+</body>
+</html>
